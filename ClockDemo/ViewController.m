@@ -23,6 +23,19 @@
         _clockView = [[RuleClockView alloc] initWithFrame:tempView.bounds];
         [tempView addSubview:_clockView];
     }
+    
+//    [_clockView addStart:@"04:44" end:@"11:44" isAM:YES];
+//    [_clockView addStart:@"01:44" end:@"02:44" isAM:NO];
+    
+    [_clockView addTime:@{
+                          @"start" :@"下午 07:00",
+                          @"end" :@"下午 06:00",
+                          }];
+    
+    [_clockView removeTime:@{
+                             @"start" :@"下午 07:00",
+                             @"end" :@"下午 06:00",
+                             }];
 }
 
 

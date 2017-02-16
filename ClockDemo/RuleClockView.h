@@ -10,4 +10,9 @@
 
 @interface RuleClockView : UIView
 
+/// @{@"start": (a HH:mm), @"end": (a HH:mm)}
+- (void)addTime:(NSDictionary *)time;
+
+- (void)removeTime:(NSDictionary *)time;
+
 @end
